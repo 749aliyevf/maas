@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maaşı hesablayan program</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Maaşı hesabla</h1>
+    <h2 style="text-align: center;">Vergidən sonra pulun (keçibee):</h2>
+    <h2 id="maas" style="text-align: center;" ></h2>
+
+    <script>
+        let maas = +prompt('Aylığun:')
+        let vergi = +prompt('Vergi gagaa:')
+        let netice = maas - (maas / 100 * vergi)
+        document.getElementById('maas').innerHTML = netice
+    </script>
+</body>
+</html>
